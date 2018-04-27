@@ -15,17 +15,7 @@ class Index extends AdminBase
     public function index()
     {
         return $this->fetch();
-    }
 
-    /**
-     * 显示创建资源表单页.
-     *
-     * @return \think\Response
-     */
-    public function welcome()
-    {
-        //
-      return  $this->fetch('welcome');
     }
 
     /**
@@ -34,39 +24,16 @@ class Index extends AdminBase
      * @param  \think\Request  $request
      * @return \think\Response
      */
-    public function save(Request $request)
+    public function save(Requestpublic $request)
     {
-        //
-    }
+        echo 134;
 
-    /**
-     * 显示指定的资源
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function read($id)
-    {
-        //
     }
-
     /**
-     * 显示编辑资源表单页.
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * 保存更新的资源
-     *
-     * @param  \think\Request  $request
-     * @param  int  $id
-     * @return \think\Response
+     * [update description]
+     * @param  Request $request [description]
+     * @param  [type]  $id      [description]
+     * @return [type]           [description]
      */
     public function update(Request $request, $id)
     {
@@ -81,6 +48,7 @@ class Index extends AdminBase
      */
     public function delete($id)
     {
-        //
+        //flat-ui
     }
+
 }
